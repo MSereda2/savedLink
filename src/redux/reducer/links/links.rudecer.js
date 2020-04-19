@@ -8,7 +8,7 @@ const INITIAL_STATE = {
   links: [
     {
       title: '11 лучших сервисов для хранение закладок',
-      link: 'lifehaker.ru',
+      link: 'https://www.google.ru/',
       category: 'Жизнь'
     },
   ],

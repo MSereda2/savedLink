@@ -30,6 +30,7 @@ const AddLink = (props) => {
 
   let onSubmit = (formData) => {
     props.AddLinkAC(formData);
+    closeModal()
   }
   return(
     <>
