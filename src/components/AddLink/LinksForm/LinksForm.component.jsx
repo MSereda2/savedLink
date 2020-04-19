@@ -25,7 +25,7 @@ const LinksForm = (props) => {
          </div>
          <div className={style.formGroup__item}>
             <p className={style.formGroup__text}>Категория</p>
-            <Field validate={[requiredField]} component={Select} name="category" />
+            <Field  component={Select} name="category" />
          </div>
        </div>
        <div>
@@ -41,7 +41,7 @@ export default reduxForm({
     initialValues: {
       title: '',
       link: '',
-      category: ''
+      category: 'Разработка'
     }
   })
 (LinksForm);

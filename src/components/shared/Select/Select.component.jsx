@@ -7,7 +7,7 @@ const Select = ({input, meta, ...props}) => {
 
   return(
     <>
-      <select {...props.input} {...props.meta} {...props} className={`${style.select_css} ${style.error}`}>
+      <select {...input} {...meta} {...props} className={`${style.select_css} ${style.error}`}>
         <option disabled>Выберите Категорию</option>
         <option>Разработка</option>
         <option>Жизнь</option>

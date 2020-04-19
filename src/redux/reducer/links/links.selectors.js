@@ -26,9 +26,3 @@ export const getLinkSelector = createSelector(getLinks, ({links, filterBy}) => {
 
   else { return links }
 })
-
-
-// link =>  link.category === "Жизнь"
-// { return link.category === "Разработка";}
-// { return link.category === "Фильмы"; }
-// { return link.category === "Игры";}

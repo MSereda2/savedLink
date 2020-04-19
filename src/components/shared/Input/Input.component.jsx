@@ -3,7 +3,7 @@ import style from './input.module.scss';
 
 const Input = ({input, meta, ...props}) => {
 
-  const hasError = meta ? meta.touched && meta.error : null ;
+  const hasError = meta ? meta.touched && meta.error : undefined ;
 
 
   return(

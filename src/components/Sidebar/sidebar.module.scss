@@ -31,6 +31,7 @@
     transition: all .2s;
     display: flex;
     align-items: center;
+    cursor: pointer;
 
     span {
       padding-left: 1rem;
@@ -43,6 +44,6 @@
   }
 }
 
-.active:focus {
+.active {
   color: $COLOR-HOVER;
 }

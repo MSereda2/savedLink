@@ -19,7 +19,7 @@ const ListLinks = (props) => {
     return  link.title.toLowerCase().includes(serachValue.toLocaleLowerCase())
   });
   
-  const currentLinks = filteredlinks.map(link => <LinkItem {...link} />)
+  const currentLinks = filteredlinks.map((link,indx) => <LinkItem key={indx} {...link} />)
 
   return(
     <div className={style.listLinks}>

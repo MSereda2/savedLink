@@ -9,7 +9,8 @@ const INITIAL_STATE = {
     {
       title: '11 лучших сервисов для хранение закладок',
       link: 'https://www.google.ru/',
-      category: 'Жизнь'
+      category: 'Жизнь',
+      id: 1
     },
   ],
   filterBy: {
