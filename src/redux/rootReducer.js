@@ -4,7 +4,7 @@ import storage from 'redux-persist/lib/storage';
 
 // Reducers
 import app_reducer from './reducer/app/app.reducer';
-import links_reducer from './reducer/links/links.rudecer';
+import links_reducer from './reducer/links/links.reducer';
 import {reducer as formReducer} from 'redux-form';
 
 const persistConfig = {
