@@ -1,0 +1,19 @@
+@import './style/base/base.module.scss'; // Base style setup
+@import './style/abstracts/variable.module.scss'; // Variable styles
+
+.app {
+  display: grid;
+  grid-template-columns: 15vw 65vw;
+  grid-template-rows: auto;
+  width: 80vw;
+  padding: 2rem;
+  margin: auto;
+}
+
+.sidebar {
+  background-color: red;
+}
+
+.listLinks {
+  background-color: green;
+}

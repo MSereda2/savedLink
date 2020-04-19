@@ -1,0 +1,39 @@
+@import '../../../style/abstracts/variable.module.scss';
+
+.search {
+
+  &__label {
+    position: absolute;
+    padding-top: .6rem;
+    left: 0;
+    top: 0;
+    color: $COLOR-PRIMARY;
+  }
+
+  &__icon {
+    font-size: 1.5rem;
+  }
+
+  &__input {
+      font-size: 1.5rem;
+      outline: none;
+      width: 50%;
+      display: block;
+      border: none;
+      // border-bottom: 1px solid black;
+      padding: .6rem 4rem;
+
+      &::-webkit-input-placeholder {
+        color: $COLOR-PRIMARY; 
+        
+      }
+
+      &:focus {
+        // border-bottom: 1px solid $COLOR-HOVER;
+
+        &::-webkit-input-placeholder {
+          color: $COLOR-PRIMARY;
+        }
+      }
+  }
+}

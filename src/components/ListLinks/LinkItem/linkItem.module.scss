@@ -1,0 +1,30 @@
+@import '../../../style/abstracts/variable.module.scss';
+
+.linkItem {
+  border-bottom: .1px solid $COLOR-PRIMARY;
+  padding: 2rem 0;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  width: 70%;
+
+  &__content {
+
+  }
+
+  &__heading {
+    font-size: 1.8rem;
+    color: $COLOR-MAIN-BLACK;
+    font-weight: 300;
+  }
+
+  &__link {
+    font-size: 1.3rem;
+  }
+
+  &__img {
+
+    img {
+
+    }
+  }
+}

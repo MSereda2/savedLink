@@ -1,0 +1,22 @@
+.formGroup {
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 55vh;
+
+  
+  &__item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-bottom: 6rem;
+
+  }
+
+  &__text {
+    font-size: 1.5rem;
+    // margin-right: 4rem;
+  }
+
+}

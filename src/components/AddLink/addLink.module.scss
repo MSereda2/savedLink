@@ -1,0 +1,70 @@
+@import '../../style/abstracts/variable.module.scss';
+.addLink {
+  position: absolute;
+  top: 0;
+  right: 20%;
+  font-size: 1.5rem;
+  font-weight: 400;
+  cursor: pointer;
+  transition: all .2s;
+
+  &:hover {
+    color: $COLOR-HOVER;
+  }
+}
+
+.modal {
+  border: 1px solid $COLOR-HOVER;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 69.7rem;
+  height: 48.7rem;
+  background-color: #fff;
+  outline: none;
+
+}
+
+.addLinkContainer {
+  // padding: 2rem;
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid $COLOR-PRIMARY;
+    padding: 2rem;
+    
+  }
+
+  &__icon {
+    font-size: 1.8rem;
+    cursor: pointer;
+  }
+
+  &__text {
+        font-size: 2.2rem;
+        font-weight: 400;
+        color: $COLOR-MAIN-BLACK
+    }
+}
+
+.overlay {
+  opacity: 0;
+  transition: opacity .5s ease-in-out;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(53, 52, 52, 0.466);
+}
+
+.afterOpen {
+  opacity: 1;
+}
+
+.beforeClose {
+  opacity: 0;
+}

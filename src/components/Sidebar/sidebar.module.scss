@@ -1,0 +1,48 @@
+@import '../../style/abstracts/variable.module.scss';
+
+.sidebar {
+
+  &__logo {
+      font-size: 2.5rem;
+      color: $COLOR-MAIN-BLACK;
+      letter-spacing: .1rem;
+      margin-bottom: 2rem;
+  }
+}
+
+.navbar {
+
+  &__item {
+    list-style: none;
+  
+    &:not(:last-child) {
+      padding-bottom: .8rem;
+    }
+  }
+
+  &__icon {
+    font-size: 2rem;
+  }
+
+  &__link {
+    text-decoration: none;
+    color: $COLOR-PRIMARY;
+    font-size: 1.8rem;
+    transition: all .2s;
+    display: flex;
+    align-items: center;
+
+    span {
+      padding-left: 1rem;
+    }
+
+
+    &:hover {
+      color: $COLOR-HOVER;
+    }
+  }
+}
+
+.active:focus {
+  color: $COLOR-HOVER;
+}

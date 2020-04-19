@@ -1,0 +1,3 @@
+export const APP_TYPES = {
+  INITIALIZE: 'INITIALIZE'
+}
