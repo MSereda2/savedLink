@@ -13,13 +13,7 @@ const INITIAL_STATE = {
       id: 1
     },
   ],
-  filterBy: {
-    home: false,
-    dev: false,
-    life: false,
-    movie: false,
-    game: false
-  }
+  filterBy: ''
 }
 
 const linksReducer = (state = INITIAL_STATE, action) => {
@@ -30,7 +24,10 @@ const linksReducer = (state = INITIAL_STATE, action) => {
         links: [...state.links, action.payload]
       }
     case LINKS_TYPE.FILTER_BY:
-      return filterByHelper(state, action.category)
+      return {
+        ...state,
+        filterBy: action.category
+      }
 
 
     default: return state;

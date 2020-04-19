@@ -18,7 +18,7 @@ class Sidebar extends React.Component {
 
     this.state = {
       activeItem: -1,
-      items: ['Дом', 'Dev', 'Жизнь', 'Фильмы', 'Игры']
+      items: ['Главная', 'Разработка', 'Жизнь', 'Фильмы', 'Игры']
     }
   }
   
@@ -34,7 +34,7 @@ class Sidebar extends React.Component {
     this.state.items.map((item, index) => (
       <li className={style.navbar__item}>
         <a
-          onClick={ e => { this.props.FilterByAC(); this.handleItemClick(index); }}
+          onClick={ e => { this.props.FilterByAC(item); this.handleItemClick(index); }}
           className={`${style.navbar__link} ${this.activeLink(index)} `}>
           <span>{item}</span>
         </a>
