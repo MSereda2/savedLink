@@ -24,16 +24,4 @@ export const getLinkSelector = createSelector(getLinks, ({links, filterBy}) => {
        return links.filter(byCategory('Игры'));
     default: return links
   }
-
-  // if(filterBy === 'Главная') { return links;}
-
-  // else if(filterBy === 'Жизнь') { return links.filter(byCategory('Жизнь'))}
-
-  // else if(filterBy.dev) { return links.filter(byCategory('Разработка'))}
-
-  // else if(filterBy.movie) { return links.filter(byCategory('Фильмы'))}
-
-  // else if(filterBy.game) { return links.filter(byCategory('Игры'))}
-
-  // else { return links }
 })

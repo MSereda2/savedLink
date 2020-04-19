@@ -1,5 +1,8 @@
+// Packages
 import React from 'react';
 import { connect } from 'react-redux';
+
+// Style
 import style from './app.module.scss';
 
 // Components
@@ -12,7 +15,7 @@ import {FilterByAC} from './redux/reducer/links/links.action';
 class App extends React.Component {
 
   componentDidMount() {
-      this.props.FilterByAC('home')
+      this.props.FilterByAC('Главная')
   }
 
   render() {

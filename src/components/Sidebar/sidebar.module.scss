@@ -7,6 +7,7 @@
       color: $COLOR-MAIN-BLACK;
       letter-spacing: .1rem;
       margin-bottom: 2rem;
+      font-weight: 400;
   }
 }
 
@@ -20,10 +21,6 @@
     }
   }
 
-  &__icon {
-    font-size: 2rem;
-  }
-
   &__link {
     text-decoration: none;
     color: $COLOR-PRIMARY;
@@ -32,11 +29,6 @@
     display: flex;
     align-items: center;
     cursor: pointer;
-
-    span {
-      padding-left: 1rem;
-    }
-
 
     &:hover {
       color: $COLOR-HOVER;

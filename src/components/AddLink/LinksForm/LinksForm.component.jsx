@@ -1,6 +1,9 @@
+// Packages
 import React from 'react';
-import style from './linkForm.module.scss';
 import {reduxForm, Field} from 'redux-form';
+
+// Style
+import style from './linkForm.module.scss';
 
 // Components
 import Btn from '../../shared/Btn/Btn.component';
@@ -10,10 +13,10 @@ import Select from '../../shared/Select/Select.component';
 // Validators
 import { requiredField } from '../../../helpers/validators/validators';
 
-const LinksForm = (props) => {
+const LinksForm = ({handleSubmit}) => {
 
   return(
-    <form onSubmit={props.handleSubmit} className={style.formGroup}>
+    <form onSubmit={handleSubmit} className={style.formGroup}>
        <div>
          <div className={style.formGroup__item}>
             <p className={style.formGroup__text}>Название</p>
@@ -25,7 +28,7 @@ const LinksForm = (props) => {
          </div>
          <div className={style.formGroup__item}>
             <p className={style.formGroup__text}>Категория</p>
-            <Field  component={Select} name="category" />
+            <Field component={Select} name="category" />
          </div>
        </div>
        <div>

@@ -1,15 +1,13 @@
+// Packages
 import React from 'react';
-import style from './sidebar.module.scss';
 import {connect} from 'react-redux';
 
-import {FaHome, FaDev, FaHeart, FaGamepad} from 'react-icons/fa';
-import {MdLocalMovies} from 'react-icons/md';
+// Style
+import style from './sidebar.module.scss';
 
 // Actions
 import {FilterByAC} from '../../redux/reducer/links/links.action';
 
-// Components
-import SidebarItem from './SidebarItem/SidebarItem.component';
 
 class Sidebar extends React.Component {
 
@@ -57,27 +55,3 @@ class Sidebar extends React.Component {
 }
 
 export default connect(null, { FilterByAC,})( Sidebar);
-
-
-
-
-{/* <>
-<SidebarItem sidebarText="Дом" filter={props.FilterByAC} category="home">
-  <FaHome />
-</SidebarItem>
-<SidebarItem sidebarText="Dev" filter={props.FilterByAC} category="dev">
-  <FaDev />
-</SidebarItem>
-<SidebarItem sidebarText="Жизнь" filter={props.FilterByAC} category="life">
-  <FaHeart />
-</SidebarItem>
-<SidebarItem sidebarText="Фильмы" filter={props.FilterByAC} category="movie">
-  <MdLocalMovies />
-</SidebarItem>
-<SidebarItem sidebarText="Игры" filter={props.FilterByAC} category="game">
-  <FaGamepad />
-</SidebarItem>
-</> */}
-
-
-// return <SidebarItem activeItem={this.state.activeItem} sidebarText={item} filter={this.props.FilterByAC} index={index}  />

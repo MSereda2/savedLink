@@ -7,7 +7,7 @@ import {GoSearch} from 'react-icons/go'
 const SearchInput = (props) => (
   <>
     <label className={style.search__label}><GoSearch className={style.search__icon}/></label>
-    <input {...props} className={style.search__input} />
+    <input autocomplete="off" {...props} className={style.search__input} />
   </>
 )
 

@@ -1,18 +1,9 @@
 // Action Type
 import {LINKS_TYPE} from './links.type';
 
-// Reducer Helper
-import {filterByHelper} from './links.helper';
 
 const INITIAL_STATE = {
-  links: [
-    {
-      title: '11 лучших сервисов для хранение закладок',
-      link: 'https://www.google.ru/',
-      category: 'Жизнь',
-      id: 1
-    },
-  ],
+  links: [],
   filterBy: ''
 }
 

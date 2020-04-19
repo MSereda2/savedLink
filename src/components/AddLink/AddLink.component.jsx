@@ -1,7 +1,10 @@
+// Packages
 import React from 'react';
 import Modal from 'react-modal';
-import style from './addLink.module.scss';
 import {connect} from 'react-redux';
+
+// Style
+import style from './addLink.module.scss';
 
 // Icons
 import {IoMdClose} from 'react-icons/io'
@@ -14,23 +17,19 @@ import {AddLinkAC} from '../../redux/reducer/links/links.action';
 
 
 
-const AddLink = (props) => {
+const AddLink = ({AddLinkAC}) => {
 
   Modal.setAppElement('#root');
 
   const [modalIsOpen, setIsOpen] = React.useState(false);
 
-  let closeModal = () => {
-    setIsOpen(false);
-  }
+  let closeModal = () => setIsOpen(false);
 
-  let openModal = () => {
-    setIsOpen(true)
-  }
+  let openModal = () =>  setIsOpen(true);
 
   let onSubmit = (formData) => {
-    props.AddLinkAC(formData);
-    closeModal()
+    AddLinkAC(formData);
+    closeModal();
   }
   return(
     <>

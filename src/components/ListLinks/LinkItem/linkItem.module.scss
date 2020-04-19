@@ -3,13 +3,8 @@
 .linkItem {
   border-bottom: .1px solid $COLOR-PRIMARY;
   padding: 2rem 0;
-  margin-top: 3rem;
   margin-bottom: 3rem;
   width: 70%;
-
-  &__content {
-
-  }
 
   &__heading {
     font-size: 1.8rem;
@@ -19,12 +14,12 @@
 
   &__link {
     font-size: 1.3rem;
-  }
+    text-decoration: none;
+    color: $COLOR-HOVER;
 
-  &__img {
-
-    img {
-
+    &:hover {
+      color: darken($color: $COLOR-HOVER, $amount: 10);
     }
   }
+
 }
